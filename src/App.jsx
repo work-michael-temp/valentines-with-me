@@ -1,27 +1,34 @@
+
 import '/workspaces/codespaces-react/src/App.css';
+import React from 'react';
+import { Button } from 'antd';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
+        <h1>
+          hi there !  i have a question for you <span className="heart">🤭</span> 
+        </h1>
       </header>
+      <body className='body'>
+        <h3>
+        i was wondering if you would like to be my valentine and hang out with me 🫣
+        </h3>
+
+        <div>
+          <Button type="primary" onClick={() => alert('Wrong answer 😡')}>
+            yeah
+          </Button>
+
+          <Button  type="primary" >
+            YES !!
+          </Button>
+        </div>
+        
+        
+      </body>
     </div>
   );
 }
